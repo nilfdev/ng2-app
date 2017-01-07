@@ -1,11 +1,18 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { AppComponent } from "./app.component";
+import { Component, OnInit } from '@angular/core';
 import { HomeComponent } from "./app/home.component";
  
-@NgModule({
-    imports: [BrowserModule],
-    declarations: [AppComponent, HomeComponent],
-    bootstrap: [AppComponent]
+@Component({
+    moduleId: module.id,
+    selector: 'app-component',
+    templateUrl: './app.component.html',
+    styleUrls: ["./app.component.css"]
 })
-export class AppModule { }
+export class AppComponent implements OnInit {
+    message: string;
+ 
+    constructor() { }
+ 
+    ngOnInit() {
+        this.message = "Hello from AppComponent!";
+    }
+}
