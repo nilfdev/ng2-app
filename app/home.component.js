@@ -12,8 +12,16 @@ var core_1 = require("@angular/core");
 var HomeComponent = (function () {
     function HomeComponent() {
     }
+    // constructor(private _router: Router){
+    // }
     HomeComponent.prototype.ngOnInit = function () {
         this.message = "... and this is the HomeComponent, hello from here too!";
+    };
+    HomeComponent.prototype.onBack = function () {
+        //this._router.navigate(['/home']);
+    };
+    HomeComponent.prototype.onChangeTitle = function () {
+        this.message = "component data was changed";
     };
     return HomeComponent;
 }());
