@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
-import { HomeComponent } from "./app/home.component";
+import { HomeComponent } from "./home.component";
  
 @NgModule({
     imports: [BrowserModule],
